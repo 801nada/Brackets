@@ -8,7 +8,7 @@ namespace Brackets
 {
     public static class Iterations
     {
-        public static bool HasClosingBrace(string value)
+        public static bool HasMatchingBrace(string value)
         {
             var openCount = 0;
             for (int i = 0; i < value.Length; i++)
@@ -26,7 +26,7 @@ namespace Brackets
             return openCount == 0;
         }
 
-        public static bool HasClosingBrace2(string value)
+        public static bool HasMatchingBrace2(string value)
         {
             var openCount = 0;
             
@@ -44,7 +44,7 @@ namespace Brackets
             return openCount == 0;
         }
 
-        public static bool HasClosingBrace3(string value)
+        public static bool HasMatchingBrace3(string value)
         {
             var openCount = 0;
             try
